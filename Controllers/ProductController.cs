@@ -22,6 +22,9 @@ namespace ProductCatalog.Controllers
         }
 
         [Route("v1/products")]
+        //60min
+        [ResponseCache(Duration = 60)]
+        //Cache-control: public, max-rage=60
         [HttpGet]
 
         public IEnumerable<ListProductViewModel> Get()
