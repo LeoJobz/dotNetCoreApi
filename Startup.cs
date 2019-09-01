@@ -15,7 +15,7 @@ namespace ProductCatalog
             services.AddMvc();
             services.AddScoped<StoreDataContext, StoreDataContext>();
             services.AddTransient<ProductRepository, ProductRepository>();
-            // services.AddResponseCompression();
+            services.AddResponseCompression();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -25,7 +25,7 @@ namespace ProductCatalog
                 app.UseDeveloperExceptionPage();
 
             app.UseMvc();
-            // app.UseResponseCompression();
+            app.UseResponseCompression();
         }
     }
 }
