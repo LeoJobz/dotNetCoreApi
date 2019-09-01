@@ -60,6 +60,10 @@
               "target": "Package",
               "version": "[2.2.0, )"
             },
+            "Microsoft.AspnetCore.ResponseCompression": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[2.2.6, )"
